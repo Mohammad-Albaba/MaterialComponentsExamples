@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:paddingTop="16dp"
+android:paddingBottom="16dp">
+<TextView
+    android:background="?android:selectableItemBackground"
+    android:id="@+id/text_view_share"
+    android:drawablePadding="16dp"
+    android:drawableStart="@drawable/ic_baseline_share_24"
+    android:textAppearance="?android:textAppearanceMedium"
+    android:padding="16dp"
+    android:text="@string/share"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/ic_baseline_share_24" />
+
+<TextView
+    android:background="?android:selectableItemBackground"
+    android:id="@+id/text_view_edit"
+    android:drawablePadding="16dp"
+    android:drawableStart="@drawable/ic_baseline_edit_24"
+    android:textAppearance="?android:textAppearanceMedium"
+    android:padding="16dp"
+    android:text="@string/edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/ic_baseline_edit_24" />
+</LinearLayout>

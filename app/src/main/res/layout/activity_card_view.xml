@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardViewActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:strokeColor="#F00"
+        app:strokeWidth="5dp"
+        app:contentPadding="16dp"
+        app:cardCornerRadius="16dp"
+        android:layout_margin="@dimen/mtrl_card_spacing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a15"
+            android:adjustViewBounds="true"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:tint="#FF0"
+        app:backgroundTint="#000"
+        app:fabSize="auto"
+        android:id="@+id/fab"
+        android:src="@drawable/ic_baseline_star_24"/>
+
+    <Button
+
+        android:id="@+id/button"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="20dp"
+        android:text="ExtendedFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabextend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:text="Add To Fav"
+        android:textColor="@android:color/white"
+        app:icon="@drawable/ic_baseline_star_24"
+        app:backgroundTint="#000"
+        app:fabSize="auto"
+        app:iconTint="#FF0"
+        app:strokeColor="#F00"
+        app:strokeWidth="5dp"
+        app:iconPadding="30dp"
+        app:iconSize="30dp"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
